@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="false"></constant><!-- 开启开发者模式上传图片时 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.multipart.maxSize" value="209715200"/>
+	<package name="a1" extends="struts-default,json-default" namespace="/">
+		<!-- 登陆start -->
+		<action name="LoginAction" class="com.edu.web.LoginAction" method="excute">
+			<result type="json">
+				<param name="root">userresult</param><!-- result是action中设置的变量名，也是页面需要返回的数据，该变量必须有setter和getter方法 -->
+			</result>
+		</action>
+		<!-- 登陆end -->
+		
+		<!-- 注册start -->
+		<action name="SendAction" class="com.edu.ckeck.SendAction" method="excute">
+      		<result type="json">
+				<param name="root">RegesterResult</param>
+			</result>
+		</action>
+		
+		<action name="RegisterAction" class="com.edu.web.RegisterAction" method="excute">
+      		<result name="success">/teacher/set_teacher.jsp</result>
+      		<result name="false">/register.html</result>
+		</action>
+		<!-- 注册end -->
+		
+		<!-- 首页 start -->
+		<action name="IndexAction" class="com.edu.web.IndexAction" method="excute">
+      		<result  name="success">/education.jsp</result>
+		</action>
+		<!-- 首页 end -->
+		
+		<!-- 老师信息 start -->
+		<action name="TeacherAction" class="com.edu.teacher.web.TeacherAction" method="excute">
+      		<result name="success">/teacher/set_teacher.jsp</result>
+      		<result name="false">/register.html</result>
+		</action>
+		<!-- 老师信息 end -->
+		
+		<!-- 授课时间金钱 start -->
+		<action name="TimeMoneyAction" class="com.edu.teacher.web.TimeMoneyAction" method="excute">
+      		<result name="success">/teacher/set_timeMoney.jsp</result>
+      		<result name="false">/register.html</result>
+		</action>
+		<!-- 授课时间金钱 end -->
+		
+		<!-- 学生需求发布 start -->
+		<action name="RequestAction" class="com.edu.student.web.RequestAction" method="excute">
+      		<result name="success">/student/set_request.jsp</result>
+      		<result name="false">/register.html</result>
+		</action>
+		<!-- 学生需求发布end -->
+		
+		
+		<!-- 我的需求 start -->
+		<action name="MyRequestAction" class="com.edu.student.web.MyRequestAction" method="excute">
+      		<result name="success">/student/myrequest.jsp</result>
+      		<result name="false">/register.html</result>
+		</action>
+		<!-- 我的需求 end -->
+		
+		<!-- 密码修改start -->
+		<action name="PasswordAction" class="com.edu.web.PasswordAction" method="excute">
+      		<result name="success">/teacher/setmobile.jsp</result>
+      		<result name="false">/register.html</result>
+		</action>
+		<!-- 密码修改end -->
+		
+		<!-- 全部教师 start -->
+		<action name="TpageAction" class="com.edu.teacher.web.TpageAction" method="excute">
+      		<result  name="success">/user/MostTeacher.jsp</result>
+		</action>
+		<!-- 全部教师  end -->
+		
+		<!-- 教师个人信息 start -->
+		<action name="TeacherAction" class="com.edu.teacher.web.TeacherAction" method="TeacherInfo">
+      		<result  name="success">/user/Once_teacher.jsp</result>
+		</action>
+		<!-- 教师个人信息  end -->
+		
+		
+		
+		<!--教授区域和地址start-->
+		<action name="TaddressAction" class="com.edu.teacher.web.TaddressAction" method="selectAddress">
+      		<result  name="success">/teacher/set_address.jsp</result>
+		</action>
+		<action name="TaddressAction" class="com.edu.teacher.web.TaddressAction" method="UpdateAddress">
+      		<result  name="success">/teacher/set_address.jsp</result>
+		</action>
+		<action name="TaddressAction" class="com.edu.teacher.web.TaddressAction" method="Addlesson">
+      		<result  name="success">/teacher/set_address.jsp</result>
+		</action>
+		<action name="TaddressAction" class="com.edu.teacher.web.TaddressAction" method="Dellesson">
+      		<result  name="success">/teacher/set_address.jsp</result>
+		</action>
+		<!--教授区域和地址end -->
+		
+		<!-- 头像验证end -->
+		<action name="AuthenticAction" class="com.edu.teacher.web.AuthenticAction" method="displayimg">
+			<result name="success">/teacher/authentication.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="AuthenticAction" class="com.edu.teacher.web.AuthenticAction" method="head">
+			<result name="success">/teacher/authentication.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="AuthenticAction" class="com.edu.teacher.web.AuthenticAction" method="pid">
+			<result name="success">/teacher/authentication.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="AuthenticAction" class="com.edu.teacher.web.AuthenticAction" method="education">
+			<result name="success">/teacher/authentication.jsp</result>
+			<result name="error">/teacher/error.jsp</result>
+		</action>
+		<!-- 头像验证end -->
+		
+		
+		<!-- 订单start -->
+		<action name="OrderAction" class="com.edu.student.web.OrderAction" method="excute">
+      		<result name="success">/student/order.jsp</result>
+      		<result name="false">/register.html</result>
+		</action>
+		<!-- 订单end -->
+	</package>
+</struts>    

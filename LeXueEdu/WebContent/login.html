@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>登录</title>
+  <link rel="stylesheet" href="css/register.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/register.js"></script>
+  <style type="text/css">
+	.Cimg,.Eimg{
+		left:362px;
+		
+	}
+	.login div .judge{
+		left:397px;
+	}
+  </style>
+  <script type="text/javascript">
+  function login(){
+	 var $btn = $("input#sub");//获取按钮元素 
+	 $btn.bind("click",function(){
+		  $.ajax({
+		      type:"post",
+		      url:"LoginAction",//需要用来处理ajax请求的action,LoginAction为处理的方法名，JsonAction为action名 
+		      data:{//设置数据源 
+		     	 usertell:$("input[name=usertell]").val(), 
+		     	 password:$("input[name=password]").val()
+		      },
+		    dataType:"json",//设置需要返回的数据类型 
+		     success:function(data){
+		         var d = eval("("+data+")");//将数据转换成json类型，可以把data用alert()输出出来看看到底是什么样的结构 
+		         //得到的d是一个形如{"key":"value","key1":"value1"}的数据类型，然后取值出来 
+		         	if(d.user!=null){
+		         		alert("用户名或密码错误");
+		         		return;
+		         	}if(d.url!=null){
+		         		alert("登陆成功");
+		         		 window.open(d.url,"_parent");
+		         		 return;
+		         	}
+		    },
+		  error:function(){ 
+		        alert("系统异常，请稍后重试！");
+		      }//这里不要加"," 
+		 });
+		});
+	 }
+  
+  $(document).ready(function(){
+		login();//点击提交，执行ajax 
+	}); 
+  </script>
+  
+  
+  
+ </head>
+ <body>
+ <div class="box" style="height:530px;width:396px;">
+	<div class="title">
+		<a href="#">
+			<img src="images/logo.png" alt="" height="130"/>
+		</a>
+		<!-- <span style="background:url('images/personal.png') no-repeat;"></span> -->
+	</div>
+	<div class="login">
+		<div class="left">
+			<div class="phoneErea">
+				<label for="phone">手机号：</label>
+				<input type="text" class="txt" id="phone" name="usertell" placeholder="手机号" regex="^1[345678]\d{9}$" />
+			</div>
+			<div class="passwordErea" style="padding-left:52px;">
+				<label for="password">密码：</label>
+				 <input type="password" class="txt" id="password" name="password" placeholder="password" regex="^\w{6,16}$" />
+				<i class="judge" style="display:none; margin-left:-16px;">请填写6到16位任意字符！</i>
+			</div>
+			<div class="rememsub">
+				<input type="checkbox" id="rememPw" />
+				<label for="radio">记住密码</label>
+				<a href="#" class="findPw">忘记密码？</a>
+			</div>
+			<div class="loginSub">
+				<input type="submit" value="登录" id="sub" style="cursor: pointer;"/>
+			</div>
+			<div class="regis">
+				<span>还没有账号？</span>
+				<a href="register.html">立即注册</a>
+			</div>
+		</div>
+	</div>
+</div>
+ </head>
+ <body>
+ </body>
+</html>

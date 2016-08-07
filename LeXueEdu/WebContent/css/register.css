@@ -1,0 +1,243 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑";
+	background:#00beb7;
+}
+a img{border:0;}
+.border{
+	border:1px solid blue;
+}
+.box{
+	margin:100px auto;
+	color:#646464;
+	width:640px;
+	background:#f3e5e5;
+	position:relative;
+}
+.box .title{
+	width:400px;
+	height:130px;
+	/* border:1px solid blue; */
+}
+.box .title img{
+	margin-left: 30px;
+	width: 100px;
+}
+.box .title span{
+	color:#000;
+	font-size:18px;
+	position:absolute;
+	font-family:"微软雅黑";
+	width:194px;
+	height:45px;
+	background:url("../images/tc.png") no-repeat;
+	top:65px;
+	right:104px;
+}
+.register{
+	width:640px;
+	padding:40px 0 40px 0px;
+	text-align:center;
+	background:#BFEFED;
+}
+input.txt,input.checkbox{
+	width:300px;
+	height:43px;
+	font-size:16px;
+	outline:none;
+	padding-left:10px;
+	border:1px solid #fff;
+	color:#767676;
+}
+input.txt:hover,input.checkbox:hover,select.checkbox:hover{
+	border:1px solid #2C837E;
+}
+.register{
+	font-size:16px;
+	color:#646464;
+}
+.register div,.infor div,.login div{
+	position:relative;
+	margin-bottom:20px;
+}
+.register div .judge,.infor div .judge,.login div .judge{
+	position:absolute;
+	top:15px;
+	width:200px;
+	text-align:left;
+	left:538px;
+	z-index:4;
+	font-style:normal;
+	color:red;
+}
+.Cimg, .Eimg{
+	position:absolute;
+	width:16px;
+	height:16px;
+	top:17px;
+	left:515px;
+	
+}
+ .Cimg{
+	background:url("../images/correct.png");
+	background-size:16px 16px;
+}
+ .Eimg{
+	background:url("../images/error.png");
+	background-size:16px 16px;
+}
+input.focus{
+	border:1px solid #2C837E;
+}
+input.error{
+	border:1px solid red;
+}
+.rgsubmit{
+	padding-top:30px;
+	/* margin-left:292px; */
+}
+ .rgsubmit input,.loginSub input{
+	width:150px;
+	height:40px;
+	font-weight:bold;
+	margin-left:-90px;
+	outline:none;
+	border:none;
+	color:#fff;
+	font-size:18px;
+	background:#5ddeba;
+	/* background:url("../images/user_icon_but.png"); */
+}
+.register .rgsubmit input:hover,.checkbox,.down{
+	cursor:pointer;
+}
+.register .regilogin span{
+	font-size:16px;
+	color:#646464;
+	font-weight:none;
+
+}
+.register .regilogin a{
+	text-decoration:none;
+	color:#2C837E;
+}
+.register .regilogin a:hover{
+	text-decoration:underline;
+}
+/* 注册部分结束 */
+
+/* 完善个人信息开始 */
+.infor{
+	width:640px;background:#BFEFED;padding:60px 0 40px 0;text-align:center;
+}
+.infor>div{
+	text-align:left;
+	padding-left:132px;
+}
+/* .nameErea,.identityErea{
+	padding-left:132px;
+} */
+/* .infor div{
+	height:50px;
+	border:1px solid blue;
+} */
+.radio{width:15px;height:15px;
+}
+.infor .sexErea{padding-left:134px;font-size:16px;/* font-weight:700; */text-align:left;
+}
+.down{
+	position:absolute;width:20px;height:20px;top:4px;right:145px;font-size:30px;color:#C1C1C1;
+}
+
+select.checkbox{
+	width:300px;height:45px;outline:none;border:#fff;color:#838383;font-size:16px;font-weight:"微软雅黑";
+	padding-left:10px;
+}
+.cityErea select.checkbox{
+	width:100px;
+}
+.infor .cityErea{
+	padding-left:130px;
+}
+.infor .educaErea{
+	padding-left:100px;
+}
+.rgsubmit input{
+	border:none;
+}
+.rgsubmit input:hover{
+	cursor:pointer;
+}
+.infor .rgsubmit{
+	padding-left:273px;
+}
+/* 完善个人信息结束 */
+
+/* 登录开始 */
+.login{
+	width:396px;
+	height:400px;
+	background:#BFEFED;
+}
+.login .left{
+	width:396px;
+	height:400px;
+}
+.login .left .phoneErea{
+	padding-left:35px;
+}
+.login .left .passwordErea{
+	padding-left:33px;
+}
+.login input.txt{
+	width:240px;
+}
+.login .left{
+	float:left;
+	padding-top:60px;
+}
+.login .rememsub{
+	padding-left:102px;
+}
+.login .rememsub .findPw{
+	text-decoration:none;
+	float:right;
+	margin-right:53px;
+	color:#646464;
+	font-size:14px;
+}
+.login .rememsub .findPw:hover{
+	color:#98C958;
+}
+.login .loginSub input{
+	margin-left:0px;
+}
+.login .loginSub {
+	padding-left:100px;
+}
+.login .regis{padding-left:178px;}
+.login .regis a{color:#98C958;text-decoration:none;line-height:40px;}
+.login .regis a:hover{
+	text-decoration:underline;
+}
+/* 登录结束 */
+.sele{width:435px;height:234px;background:#BFEFED;padding:60px 0 0 25px;}
+
+.sele .parent{float:left;}
+.sele .teacher{float:left;}
+.sele a{width:200px;height:200px;text-decoration:none;text-align:center;
+}
+.sele a span{
+	display:block;
+	width:150px;
+	color:#fff;
+	font-size:18px;
+	line-height:40px;
+	margin-left:25px;
+	/* font-weight:bold; */
+	height:40px;
+	background:#98C958;
+}

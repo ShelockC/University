@@ -1,0 +1,145 @@
+body{
+	background: url(images/back1.jpg);
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+/*div{border:1px solid #000;}*/
+tr{
+    display:block; /*将tr设置为块体元素*/
+    margin:2px 0;  /*设置tr间距为2px*/
+}
+
+#student{
+	margin: 0 auto;
+	margin-top: 130px;
+	height:27px;
+	line-height:40px;
+	width:320px;
+	background-color:white; 
+	font-family:微软雅黑;
+	text-align:center;
+	font-size:16px;
+}
+.box{
+	width:420px;
+	position:relative;
+	margin:0 auto;
+}
+#login{
+	margin:-35px auto;
+	height:280px;
+	width:320px;
+    background-color:white;
+}
+
+
+#register-title{
+	position:absolute;
+    top:46px;
+    left:510px;	
+}
+
+#register{
+	/* margin:80 auto; */
+	height:320px;
+	width:420px;
+    background-color:#BFEFED;	
+
+}
+.box .title{
+	height: 150px;
+	margin-left: 30px;
+	margin-top: 60px;
+}
+.box .title img{
+	width: 100px;
+	height: 140px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.box .title span{
+	color:#000;
+	font-size:18px;
+	position:absolute;
+	font-family:"微软雅黑";
+	width:194px;
+	height:45px;
+	background:url("../images/regi.png") no-repeat;
+	top:65px;
+	left:200px;
+}
+#register td{
+	position:relative;
+}
+#register .judge{
+	position:absolute;
+	top:10px;
+	width:200px;
+	text-align:left;
+	left:275px;
+	z-index:4;
+	font-style:normal;
+	color:red;
+}
+.Cimg, .Eimg{
+	position:absolute;
+	width:16px;
+	height:16px;
+	top:12px;
+	left:257px;
+	
+}
+ .Cimg{
+	background:url("../images/correct.png");
+	background-size:16px 16px;
+}
+ .Eimg{
+	background:url("../images/error.png");
+	background-size:16px 16px;
+}
+#teacherRegister{
+	margin:80 auto;
+	height:300px;
+	width:320px;
+    background-color:white;	
+	display:none;
+}
+.retable{
+	margin-top:35px;
+}
+.in{
+    width: 250px;
+    height:35px;
+}
+.rebutton{
+	width: 250px;
+    height:35px;
+	background:rgba(50,80,106,0.8);
+
+	
+}
+.scbutton{
+	width: 90px;
+	height:35px;
+	background:rgba(50,80,106,0.8);
+
+}
+
+input.txt{
+	outline:none;
+	border:1px solid #fff;
+}
+input.txt:hover,input.checkbox:hover,select.checkbox:hover{
+	border:1px solid #2C837E;
+}
+.qtregisterw{
+	height:34px;
+	line-height:34px;
+	font-family:微软雅黑;
+	text-align:center;
+}
+#qtregister{
+	
+	margin-left:30px;
+}

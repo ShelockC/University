@@ -1,0 +1,172 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  /*background:#DCE4E0;*/
+  /*background:#DDDDDD;*/
+}
+.logo{
+  /*opacity: 0.8;*/
+  width:100%;
+  height:140px;
+  position: relative;
+}
+.logo img{
+  width:150px;
+  height:140px;
+  margin-left: 50px;
+}
+#logo_1{
+  position: absolute;
+}
+#logo_1 h1{
+  position: absolute;
+  height:140px;
+  line-height: 140px;
+  left:250px;
+  width:200px;
+  top:0px;
+  font-family: "微软雅黑";
+  color:#00BEB7;
+}
+.logo_2{
+  position: absolute;
+  font-size:16px;
+  font-weight:bold;
+  right:60px;
+  height:40px;
+  width:15%;
+  line-height:40px;
+  cursor: pointer;
+  background:#00BEB7;
+  padding:0px 20px;
+ 
+}
+.logo_2 span{
+  color:white;
+  margin-right: 20px;
+}
+.top{
+  background:#00BEB7;
+  width:100%;
+  height:50px;
+  color:white;
+  font-size: 24px;
+}
+.top ul{
+  margin-left: 200px;
+}
+.top ul a{
+  text-decoration: none;
+  color:white;
+}
+.top ul li{
+  list-style: none;
+  float:left;
+  width:160px;
+  text-align: center;
+  line-height: 50px;
+  border-right:2px solid #00B4AE;
+  /*vertical-align: middle;*/
+}
+.top li:hover{
+  background:#1BB4AE;
+}
+.asterisk{
+  background:#00B4AE;
+}
+.teacherfunction{
+  position: relative;
+  width:100%;
+  height:1000px;
+  margin:30px auto;
+}
+.left{
+  background:#F5F5F5;
+  position:absolute;
+  width:200px;
+  height:1000px;
+  color:white;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  left:80px;
+}
+.left li{
+  list-style: none;
+  line-height:70px;
+  text-decoration:none;
+  height:70px;
+  color:#6A6C6F;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width:200px;
+  border-bottom: 1px solid #E6E6E6;
+  border-left:5px solid #E6E6E6;
+}
+.left li a{
+  height:70px;
+  color:#595959;
+}
+.left li:hover{
+  /*background:silver;*/
+  border-left: 5px solid #00BEB7;
+}
+#mytabcontent{
+    position:absolute;
+    width:70%;
+    height:600px;
+    left:300px;
+    border-radius: 10px;
+}
+#center{
+   background:#F5F5F5;
+   padding-top: 10px;
+   padding-left: 140px;
+   height:580px;
+   color:#646464;
+   font:14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+}
+.name{
+  height:55px;
+  line-height: 55px;
+}
+#list,#lesson,#money,#envelope{
+  display:none;
+   background:#F5F5F5;
+}
+.btn{
+  margin: 20px 100px;
+  background:#00BEB7;
+  color:white;
+}
+.w{
+  height:30px;
+  line-height: 30px;
+}
+.w1{
+  height:30px;
+  line-height: 30px;
+  width:100px;
+}
+.w2{
+  height:30px;
+  line-height: 30px;
+  width:300px;
+}
+#list,#lesson,#money,#envelope{
+   background:#F5F5F5;
+   padding-top: 10px;
+   padding-left: 50px;
+   height:auto;
+   color:#646464;
+   font:16px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+   padding-bottom: 50px;
+}
+.content1,.content2,.content3,.content4{
+  height:80px;
+  width:800px;
+  background:white;
+  border-radius: 10px;
+}
