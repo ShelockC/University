@@ -1,0 +1,66 @@
+body{
+	background-color: #83AF9B!important;
+}
+
+#main{
+	width: 1024px;
+	background-color: #fff;
+	margin:0 auto;
+	margin-top: 40px;ssss
+	margin-bottom: 40px;
+	border-radius: 5px;
+	box-shadow:0px 5px 10px 0px #333;
+}
+
+#topMenu{
+	font-family: 微软雅黑;
+	font-weight: bold;
+	font-style: 15px;
+	letter-spacing: 1px;
+	border-bottom-left-radius:0px !important;
+	border-bottom-right-radius:0px !important;
+	margin-bottom: 0;
+}
+
+#chart{
+	
+	margin:0 auto;
+	height: 500px;
+	width: 910px;
+	margin-top: 25px;
+}
+
+td{
+	width:10px;
+	text-align: center;
+	font-family: 微软雅黑;
+}
+tr{
+	height:50px;
+}
+
+#chart1{
+	width: 450px;
+	height: 350px;
+	float:left;
+	margin-left: 100px;
+	margin-top: 60px;
+}
+#chart2{
+	background-color: #eee;
+	width: 350px;
+	height: 350px;
+	float:right;
+	margin-top: 60px;
+	margin-right: 100px;
+}
+
+#bottomMenu{
+	font-family: 微软雅黑;
+	font-weight: bold;
+	font-style: 15px;
+	letter-spacing: 1px;
+	border-top-left-radius:0px !important;
+	border-top-right-radius:0px !important;
+	margin-bottom: 0;
+}

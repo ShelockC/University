@@ -1,0 +1,85 @@
+body{
+	background-color: #83AF9B!important;
+}
+
+#main{
+	width: 1024px;
+	background-color: #fff;
+	margin:0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-radius: 5px;
+	box-shadow:0px 5px 10px 0px #333;
+}
+#topMenu{
+	font-family:微软雅黑;
+	font-weight:bold;
+	font-size:15px;
+	letter-spacing:1px;
+	border-bottom-left-radius:0px !important;
+	border-bottom-right-radius:0px !important;
+	margin-bottom:0;
+}
+#title{
+	text-align:center;
+	font-size:30px;
+	line-height:50px;
+	font-family:微软雅黑;
+	font-weight:bold;
+	margin-left:auto;
+	margin-right:auto;
+	height:100px;
+	width:910px;
+	margin-top:25px;
+	margin-bottom:30px;
+}
+table{
+	width:800px;
+	margin-bottom: 50px;
+}
+td{
+	text-align:center;
+	font-family:微软雅黑;
+	font-weight:800;
+	width:100px;
+	height:50px;
+}
+.but{
+	width:800px;
+	height:100px;
+	border-top:dashed 2px;
+	border-bottom:dashed 2px;
+	margin-bottom:50px;
+}
+#name{
+	border:none;
+	outline:none;
+	height:50px;
+	width:100px;
+	text-align:center;
+}
+#pid{
+	border:none;
+	outline:none;
+	height:50px;
+	width:500px;
+	padding-left:20px;
+}
+#graduate_school,#graduate_date,#birthday,#address,#household_address,#tel,#email,#home_address,#home_tel,#remark,#stuAutograph{
+	border:none;
+	outline:none;
+	height:50px;
+	width:300px;
+	padding-left:20px;
+}
+#schoolCode{
+	border:none;
+	outline:none;
+	height:50px;
+	width:700px;
+	padding-left:20px;
+}
+#sure,#notice,#process{
+	margin-top:30px;
+}
+
